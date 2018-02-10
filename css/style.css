@@ -1,0 +1,303 @@
+/* Root variables */
+:root{
+  /*--main-color:#edb834;*/
+  --main-color:rgb(32,44,69);
+  --font-family:century Gothic;
+}
+
+*{
+  margin:0;
+  padding:0;
+}
+body{
+  font-family:var(--font-family);
+}
+
+header{
+  background: var(--main-color);
+  border-bottom:3px solid black;
+}
+
+#nav-desktop{
+  display:flex;
+  justify-content: space-between;
+}
+
+#nav-desktop ul{
+  list-style: none;
+}
+#nav-desktop li{
+  float:left;
+  padding: 15px 20px;
+}
+
+#nav-desktop li:hover{
+  color:var(--main-color);
+  background: black;
+}
+#nav-desktop a{
+  text-decoration:none;
+  color:white;
+}
+#nav-mobile{
+  display: none;
+}
+#nav-mobile .head{
+  display: flex;
+  justify-content: space-between;
+}
+.menu-btn{
+  padding:2px 10px;
+  background: var(--main-color);
+  color:white;
+  border:none;
+  text-decoration: none;
+}
+#nav-mobile .head i{
+padding-top:10px;
+}
+#nav-mobile a{
+  display: block;
+  text-align: center;
+  text-decoration:none;
+  color:white;
+  padding-top:10px;
+  padding-bottom: 10px;
+  width: 100%;
+}
+#nav-mobile a:hover{
+  color:white;
+  background: black;
+}
+
+/* Home, Showcase*/
+#showcase{
+  min-height: 350px;
+}
+#showcase .bg-image{
+  height:350px;
+  position: absolute;
+  z-index:-1;
+  background: url('../img/home-construction.jpg') no-repeat;
+  background-position:center;
+  background-size: cover;
+  width: 100%;
+  opacity: .5;
+}
+
+#showcase .content-wrap{
+  text-align:center;
+  padding-top:90px;
+
+}
+.brand{
+  color: white;
+  padding-top:10px;
+}
+.brand a:hover{
+  background: var(--main-color);
+}
+.btn{
+  padding:1em 2em;
+  background: var(--main-color);
+  color: white;
+  text-decoration: none;
+  margin-top:20px;
+}
+#main-services{
+  margin-top:20px;
+  background: #332f2f;
+  padding:20px;
+}
+#main-services h2,#main-services hr{
+  text-align:center;
+  color: white;
+}
+.line{
+  margin-left:40%;
+  margin-right: 40%;
+  color: var(--main-color);
+  margin-top:20px;
+}
+
+#main-services .services{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:10px;
+
+}
+#main-services .service{
+  text-align: center;
+  border: 3px solid #ddd;
+  padding-top:10px;
+  padding:20px;
+  background: #ddd;
+  margin-bottom: 20px;
+}
+
+#supporters{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  margin-bottom: 30px;
+  background: lightgray;
+  padding:20px;
+}
+#supporters .partners{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 10px;
+}
+#supporters .partners div{
+  background: #ddd;
+  padding-top:20px;
+  text-align: center;
+}
+.titles{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:10px;
+  text-align: center;
+  margin-top: 30px;
+}
+#supporters h2{
+  text-align: center;
+  margin-bottom:30px;
+}
+#supporters hr{
+  margin-left:35%;
+  margin-right: 35%;
+}
+
+footer{
+  background: var(--main-color);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding-top:30px;
+}
+footer .social-links{
+  display: flex;
+  justify-content: space-around;
+}
+footer a{
+  color: white;
+}
+#about-us{
+  margin-right:2vw;
+  margin-left:2vw;
+  background: #ddd;
+  margin-top:30px;
+  padding: 10px;
+}
+#about-us h3{
+  text-align: center;
+}
+#weoffer{
+  margin-top:30px;
+  margin-bottom: 30px;
+  background: #332f2f;
+  padding: 20px;
+}
+#weoffer h3{
+  text-align:center;
+  color: white;
+}
+#weoffer .services{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap:20px;
+  text-align: center;
+}
+#weoffer .services div{
+  background-color: #ddd;
+  padding:20px;
+}
+#facts{
+  margin-bottom: 10px;
+  background: #ceeeef;
+  padding-top: 20px;
+  padding-bottom:20px;
+}
+#facts h2{
+  text-align: center;
+}
+#facts .fact-list{
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Contact Us page*/
+#contact-section{
+  display: flex;
+  justify-content: space-around;
+  margin-top:30px;
+  margin-bottom: 30px;
+}
+.contact-form input[type=email],.contact-form input[type=text]{
+  height:30px;
+  margin-bottom: 20px;
+}
+.contact-form input[type=email],.contact-form input[type=text],textarea{
+  width:400px;
+  font-family: century Gothic;
+}
+input[type=submit]{
+  font-family: century Gothic;
+  border:none;
+}
+@media(max-width:750px){
+  #nav-desktop{
+    display: none;
+  }
+  #nav-mobile{
+    display: block;
+  }
+  #main-services .services{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top:20px;
+  }
+  #supporters{
+    display: block;
+  }
+  #supporters .testimonials{
+    margin:30px 20px;
+  }
+  /*What we offer*/
+
+  #weoffer .services{
+    display: block;
+  }
+  #weoffer .services div{
+    margin-bottom: 20px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+  }
+
+  /* Contact Us page on small devices */
+  #contact-section{
+    display: block;
+    text-align: center;
+  }
+  #contact-section .contact-form{
+    background: #ddd;
+    margin-bottom: 30px;
+    padding-top:20px;
+    padding-bottom: 20px;
+  }
+  .contact-form input[type=email],.contact-form input[type=text],textarea{
+    width:80%;
+    position: relative;
+    font-family:century Gothic;
+
+  }
+  footer{
+    display: block;
+  }
+  footer .social-links{
+    padding-top:20px;
+  }
+}

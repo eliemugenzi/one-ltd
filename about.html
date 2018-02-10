@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>About Us|One Construction Ltd</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(()=>{
+        $(".menu").hide();
+        $("#toggle").click(()=>{
+          console.log("clicked");
+          $(".menu").slideToggle(500);
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <header>
+      <nav id="nav-desktop">
+        <h2 class="brand"><a href="index.html">One Construction Ltd</a></h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+      <nav id="nav-mobile">
+        <div class="head">
+          <h2 class="brand"><a href="index.html">One Construction Ltd</a></h2>
+          <button type="button" name="button" class="menu-btn" id="toggle"><i class="fa fa-bars fa-2x"></i></button>
+        </div>
+        <div class="menu">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+
+      </nav>
+    </header>
+    <section id="about-us">
+      <h3>ABOUT US</h3><br>
+     <b><i class="fa fa-check"></i>&nbsp;&nbsp; We have 30+ years in building industry.</b><br><br>
+      Lorem ipsum dolor sit amet,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+       At vero eos et accusam et justo duo dolores et ea rebum.  Lorem ipsum dolor sit amet,  no sea takimata sanctus est
+       Lorem ipsum dolor sit amet.  Stet clita kasd gubergren,  no sea takimata sanctus est Lorem ipsum dolor sit amet.
+         no sea takimata sanctus est Lorem ipsum dolor sit amet.  no sea takimata sanctus est Lorem ipsum dolor sit amet.
+         sed diam voluptua.
+      <br><br>
+
+      <b><i class="fa fa-check"></i>We use technology to do the job more quickly.</b><br><br>
+      <b><i class="fa fa-check"></i>Employees are continually trained on safety issues.</b>
+    </section>
+    <section id="weoffer">
+      <h3>WHAT WE OFFER</h3><br>
+      <div class="services">
+        <div class="">
+          <h4>Home Construction</h4><br>
+          <img src="./img/home-construction.jpg"  height="150px" width="150px" alt=""><br>
+          We build and create better mansions for residential purposes.<br><br>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="">
+          <h4>Architectural Design</h4><br>
+          <img src="./img/art-design.jpg" height="150px" width="150px" alt=""><br>
+          We can design well the master plan of your mansion.<br><br>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="">
+          <h4>Building Construction</h4><br>
+          <img src="./img/one-cons-2.jpg" height="150px" width="150px" alt=""><br>
+          We can build better buildings for business purposes.<br>
+          <br><a href="#" class="btn">Read More</a>
+        </div>
+        <div class="">
+          <h4>Renovation</h4><br>
+          <img src="./img/renovation.jpg" height="150px" width="150px" alt=""><br>
+          We are able to Renovate your buildings perfectly.<br><br>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="">
+          <h4>Interior Design</h4><br>
+          <img src="./img/interior-design.jpg" width="150px" height="150px" alt=""><br>
+          We are able to let your buildings have a nice interior look.<br><br>
+          <a href="#" class="btn">Read More</a>
+        </div>
+
+      </div>
+    </section>
+    <section id="facts">
+      <h2>AWESOME FACTS</h2><br>
+      <div class="fact-list">
+        <div>
+          <b>13,691 +</b><br>
+          Projects Completed
+        </div>
+        <div>
+          <b>1,725 +</b><br>
+          Satisfied Clients
+        </div>
+        <div>
+          <b>984 +</b><br>Workers Employed
+        </div>
+      </div>
+    </section>
+    <footer>
+      &copy; 2018 One Construction Ltd
+      <div>
+        <h3>We are on Social Media</h3><br>
+        <div class="social-links">
+          <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+          <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+          <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
