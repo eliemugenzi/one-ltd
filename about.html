@@ -6,9 +6,12 @@
     <title>About Us|One Construction Ltd</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
     <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(()=>{
+        AOS.init({});
         $(".menu").hide();
         $("#toggle").click(()=>{
           console.log("clicked");
@@ -40,7 +43,7 @@
 
       </nav>
     </header>
-    <section id="about-us">
+    <section id="about-us" data-aos="slide-right">
       <h3>ABOUT US</h3><br>
      <b><i class="fa fa-check"></i>&nbsp;&nbsp; We have 30+ years in building industry.</b><br><br>
       ONE Construction Ltd is a company founded to improve the quality of mansions and buildings in Rwanda.
@@ -54,31 +57,31 @@ Now,we are the best in serving our Country the modern buildings for both residen
     <section id="weoffer">
       <h3>WHAT WE OFFER</h3><br>
       <div class="services">
-        <div class="">
+        <div class="" data-aos="fade-up">
           <h4>Home Construction</h4><br>
           <img src="./img/home-construction.jpg"  height="150px" width="150px" alt=""><br>
           We build and create better mansions for residential purposes.<br><br>
           <a href="#" class="btn">Read More</a>
         </div>
-        <div class="">
+        <div class="" data-aos="fade-up">
           <h4>Architectural Design</h4><br>
           <img src="./img/art-design.jpg" height="150px" width="150px" alt=""><br>
           We can design well the master plan of your mansion.<br><br>
           <a href="#" class="btn">Read More</a>
         </div>
-        <div class="">
+        <div class="" data-aos="fade-up">
           <h4>Building Construction</h4><br>
           <img src="./img/one-cons-2.jpg" height="150px" width="150px" alt=""><br>
           We can build better buildings for business purposes.<br>
           <br><a href="#" class="btn">Read More</a>
         </div>
-        <div class="">
+        <div class="" data-aos="fade-up">
           <h4>Renovation</h4><br>
           <img src="./img/renovation.jpg" height="150px" width="150px" alt=""><br>
           We are able to Renovate your buildings perfectly.<br><br>
           <a href="#" class="btn">Read More</a>
         </div>
-        <div class="">
+        <div class="" data-aos="fade-up">
           <h4>Interior Design</h4><br>
           <img src="./img/interior-design.jpg" width="150px" height="150px" alt=""><br>
           We are able to let your buildings have a nice interior look.<br><br>

@@ -6,9 +6,13 @@
     <title>One Construction Ltd|Welcome</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.2.0/aos.js" charset="utf-8"></script>
     <script type="text/javascript">
       $(document).ready(()=>{
+        AOS.init({});
         $(".menu").hide();
         $("#toggle").click(()=>{
           console.log("clicked");
@@ -42,7 +46,7 @@
     </header>
     <section id="showcase">
       <div class="bg-image"></div>
-      <div class="content-wrap">
+      <div class="content-wrap animated slideInDown">
         <h3>Welcome to One Construction Ltd</h3><br>
         The best in serving you the quality buildings..<br><br><br>
         <a href="about.html" class="btn">About Us</a>
@@ -52,21 +56,21 @@
       <h2>MAIN SERVICES</h2>
       <hr class="line"><br><br>
       <div class="services">
-        <div class="service">
+        <div class="service" data-aos="fade-up">
           <h4>Home Construction</h4><br>
           <img src="img/home-construction.jpg" height="150px" width="150px" alt="">
           <div class="">
             We build and create better mansions for residential purposes.
           </div>
         </div>
-        <div class="service">
+        <div class="service" data-aos="fade-up">
             <h4>Architectural Design</h4><br>
           <img src="img/art-design.jpg" height="150px" width="150px" alt="">
           <div class="">
             We can design well the master plan of your mansion.
           </div>
         </div>
-        <div class="service">
+        <div class="service" data-aos="fade-up">
           <h4>Building Construction</h4><br>
           <img src="img/one-cons-2.jpg" height="150px" width="150px" alt="">
           <div class="">
@@ -78,7 +82,7 @@
     <section id="supporters">
       <div class="">
         <h2>OUR PARTNERS</h2>
-        <div class="partners">
+        <div class="partners" data-aos="slide-right">
           <div>
             <img src="./img/cons-logo-1.png" width="80px" height="80px" alt="">
           </div>
@@ -100,7 +104,7 @@
         </div>
       </div>
 
-      <div class="testimonials">
+      <div class="testimonials" data-aos="slide-left">
         <h2>TESTIMONIALS</h2>
           <blockquote>
             <i>"This is one of the best Companies I ever worked with.Working conditions are good,atmosphere is great and
